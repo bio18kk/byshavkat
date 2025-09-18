@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survival Code Academy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container" id="auth-container">
+    <h2 id="form-title">Регистрация в сайт Bio_18k</h2>
+    <form id="authForm">
+      <input type="text" id="username" placeholder="Название аккаунта" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Пароль" required>
+      <input type="password" id="confirmPassword" placeholder="Повторите пароль" class="hidden">
+      <button type="submit" id="submit-btn">Зарегистрироваться</button>
+    </form>
+    <div class="status" id="status"></div>
+    <div class="switch-form">
+      <p id="switch-text">Уже есть аккаунт? <a href="#" id="switch-link">Войти</a></p>
+    </div>
+  </div>
+
+  <div id="learning-platform" class="hidden">
+    <!-- Обучающая платформа загружается здесь -->
+  </div>
+
+  <script src="main.js"></script>
+  <script src="learning-platform.js"></script>
+
+</body>
+</html>
